@@ -23,19 +23,67 @@
   </head>
   <body>
     <!-- Box at the top (lime green)-->
-    <header id="dest_header"></header>
+    <header class="text-center align-items-center" id="dest_header">
+      <h1 class="blah">Vacation Destination WishList</h1>
+      <p>
+        Found exciting places to visit on your vacation? Use the form below to
+        add them to your wishlist.
+      </p>
+    </header>
 
     <div class="row">
-      <div class="col-4">
+      <div class="col">
         <!-- left box with 4 inputs, 4 titles, and 1 btn(red) -->
-        <section class="container-sm" id="red_box"></section>
+        <section class="container-sm" id="red_box">
+          <div class="mb-3">
+            <label class="form-label">Destination name</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Enter the name of the destination."
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Location</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Where is it located?"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Photo</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Enter an image url of the place"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Where is it located?"
+            ></textarea>
+          </div>
+          <button class="btn btn-primary align" type="submit">
+            Add to list
+          </button>
+        </section>
       </div>
       <div class="col">
         <!-- right box with two children(blue) -->
         <section class="container-sm" id="blue_box">
           <section class="column">
             <!-- "Enter destination details"(purple) -->
-            <section class="container" id="purple_header"></section>
+            <section class="container fw-bold" id="purple_header">
+              Enter destination details
+            </section>
             <!--yellow -->
             <section class="card-body" id="yellow_body"></section>
           </section>
