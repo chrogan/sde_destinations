@@ -1,3 +1,37 @@
-#mypara{
-    background-color: red;
+#dest_header{
+    height: 25vh;
+    background-color: #E9ECEF;
+    border: 10px solid rgb(111, 249,0);
+    margin: 3px;
+}
+
+#red_box{
+    border: 10px solid #ED2805;
+    height: 60vh;
+    width: 35vw;
+    margin-left: 110px;
+
+}
+
+#blue_box{
+    border: 10px solid #0B3BFF;
+    height: 60vh;
+    width: 35vw;
+}
+
+#purple_header{
+    margin-top: 3px;
+    border: 10px solid #EC41FF;
+    height: 10%;
+}
+
+#yellow_body{
+    margin-top: 10px;
+    border: 10px solid #FFFA0E;
+    height: 85%;
+
+}
+
+.row{
+ padding-top: 5px;    
 }
