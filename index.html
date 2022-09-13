@@ -21,71 +21,95 @@
     <!-- link to my .css -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <!-- Box at the top (lime green)-->
-    <header class="text-center align-items-center" id="dest_header">
-      <h1 class="blah">Vacation Destination WishList</h1>
-      <p>
-        Found exciting places to visit on your vacation? Use the form below to
-        add them to your wishlist.
-      </p>
-    </header>
 
-    <div class="row">
-      <div class="col">
+  <body>
+    <!-- Container for Title heading -->
+    <div class="jumbotron jumbotron-fluid" id="headerContainer">
+      <div class="text-center align-middle">
+        <div class="container" id="dest">
+          <h1 class="display-4">Vacation Destination WishList</h1>
+          <p class="lead">
+            Found exciting places to visit on your vacation? Use the form below
+            to add them to your wishlist.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- This container holds the left and right boxes -->
+    <div class="container" id="mainElements">
+      <div class="col-md-3">
         <!-- left box with 4 inputs, 4 titles, and 1 btn(red) -->
         <section class="container-sm" id="red_box">
-          <div class="mb-3">
-            <label class="form-label">Destination name</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Enter the name of the destination."
-            />
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Location</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Where is it located?"
-            />
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Photo</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Enter an image url of the place"
-            />
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Description</label>
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-              placeholder="Where is it located?"
-            ></textarea>
-          </div>
-          <button class="btn btn-primary align" type="submit">
-            Add to list
-          </button>
+          <form class="align-middle">
+            <div class="align-middle">
+              <div class="mb-3 mt-3" id="inputs">
+                <label class="form-label">Destination name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="destinationName"
+                  placeholder="Enter the name of the destination."
+                />
+              </div>
+
+              <div class="mb-3" id="inputs">
+                <label class="form-label">Location</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="location"
+                  placeholder="Where is it located?"
+                />
+              </div>
+
+              <div class="mb-3" id="inputs">
+                <label class="form-label">Photo</label>
+                <input
+                  type="url"
+                  class="form-control"
+                  id="photo"
+                  placeholder="Enter an image url of the place"
+                />
+              </div>
+
+              <div class="mb-3" id="inputs">
+                <label class="form-label">Description</label>
+                <textarea
+                  class="form-control"
+                  id="description"
+                  rows="3"
+                  placeholder="Where is it located?"
+                ></textarea>
+              </div>
+
+              <button
+                class="btn btn-primary"
+                type="submit"
+                id="submitBtn"
+                value
+              >
+                Add to list
+              </button>
+            </div>
+          </form>
         </section>
       </div>
-      <div class="col">
+      <div class="col-md-9">
         <!-- right box with two children(blue) -->
         <section class="container-sm" id="blue_box">
           <section class="column">
-            <!-- "Enter destination details"(purple) -->
-            <section class="container fw-bold" id="purple_header">
-              Enter destination details
+            <!-- "Enter destination details"(purple)  -->
+            <section
+              class="container fw-bold text-center pt-2"
+              id="purple_header"
+            >
+              Bucket List!
             </section>
-            <!--yellow -->
-            <section class="card-body" id="yellow_body"></section>
+            <!-- Yellow box -->
+            <section class="card-body" id="yellow_body">
+              <div></div>
+            </section>
           </section>
         </section>
       </div>
@@ -96,5 +120,7 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <!-- link to my script  -->
+    <script src="./script.js"></script>
   </body>
 </html>

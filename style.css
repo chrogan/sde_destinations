@@ -1,38 +1,53 @@
-#dest_header{
-    height: 25vh;
+#headerContainer{
+    height: 30vh;
     background-color: #E9ECEF;
-    border: 10px solid rgb(111, 249,0);
-    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+#dest{
+    padding-top: 5%;
+}
+
+#mainElements{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60vh;
+    justify-content: center;
 }
 
 #red_box{
     border: 10px solid #ED2805;
     height: 60vh;
-    width: 35vw;
-    margin-left: 110px;
-
 }
 
 #blue_box{
     border: 10px solid #0B3BFF;
-    height: 60vh;
-    width: 35vw;
 }
 
 #purple_header{
     margin-top: 3px;
-    border: 10px solid #EC41FF;
+    /* border: 10px solid #EC41FF; */
     height: 10%;
     font-size: larger;
 }
 
 #yellow_body{
     margin-top: 10px;
-    border: 10px solid #FFFA0E;
+    /* border: 10px solid #FFFA0E; */
     height: 85%;
 
 }
+#inputs{
+    width: 70%;
+    margin: auto;
+}
 
+#submitBtn {
+    display: flex;
+    justify-content: center;
+  margin: auto;
+}
 .row{
  padding-top: 5px;    
 }
